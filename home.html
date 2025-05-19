@@ -5,7 +5,6 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" author="Afif">
     <link rel="stylesheet" type="text/css" href="style.css">    
     <script src="https://kit.fontawesome.com/8bd7cb800b.js" crossorigin="anonymous"></script>
-     <script src="script.js"></script> 
     <title>Makmurflix</title>
 </head>
 <body>
@@ -30,17 +29,16 @@
         <div class="first_row">
             <div class="featured_container">
                 <div class="mySlides">
-                    <img src="images/flow/thumb.avif" style="width:100%"> 
+                    <img src="images/flow/thumb.avif" class="thumb" style="width:100%"> 
                 </div>
                 <div class="mySlides">
-                    <img src="images/spiritedaway/thumb.webp" style="width:100%"> 
+                    <img src="images/spiritedaway/thumb.webp" class="thumb" style="width:100%"> 
                 </div>
                  <div class="mySlides">
-                    <img src="images/ejenali/thumb.jpg" style="width:100%"> 
+                    <img src="images/ejenali/thumb.jpg" class="thumb" style="width:100%"> 
                 </div>
                 <div class="featured_overlay_container"></div>
-                <a class="prev" onclick="plusSlides(-1)"><i class="fa-solid fa-chevron-left"></i></a>
-                <a class="next" onclick="plusSlides(1)"><i class="fa-solid fa-chevron-right"></i></a>
+                
                 <div class="details_container">
                     <img src="images/flow/logo.png" class="logo" alt="logo" style="width: 280px;">
                     <div class="further_details">
@@ -65,13 +63,18 @@
                         <div>Science Fiction</div>
                     </div>
                 </div>
+                <div id="fader"></div>
+                <a class="prev" onclick="plusSlides(-1, 'prev')"><i class="fa-solid fa-chevron-left"></i></a>
+                <a class="next" onclick="plusSlides(1, 'next')"><i class="fa-solid fa-chevron-right"></i></a>
                 <h2>Featured Now</h2>
             </div>
-            <div class="popular_container">Test</div>
+            <div class="popular_container">
+                <h2>Top 10</h2>
+            </div>
         </div>
     </main>
 
 
-
+    <script src="script.js"></script>
 </body>
 </html>
