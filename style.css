@@ -136,8 +136,13 @@ section {
 .first_row {
     display: flex;
     flex-direction: row;
-    flex-wrap: wrap;
     justify-content: stretch;
+}
+
+@media (max-width: 800px) {
+    .first_row {
+        flex-direction: column;
+    }
 }
 
 .featured_container {
@@ -145,7 +150,8 @@ section {
     border-radius: 20px;
     overflow: hidden;
     height: 400px;
-    width: 70%;
+    width: 100%;
+    background-color: #000;
 }
 
 .featured_container * {
@@ -160,9 +166,16 @@ section {
     margin: 0px;
 }
 
+@keyframes fade {
+  from {filter:brightness(0); transform: translateX(-20%);} 
+  to {opacity: 1; transform: translateX(0%);}
+}
+
 .mySlides {
+    display: none;
     width: 100%;
     height: 100%;
+    animation: fade 1.5s;
 }
 
 .mySlides img {
@@ -182,8 +195,14 @@ section {
     height: 100%;
 }
 
+@keyframes fadeAndMove {
+  from {opacity: 0; transform: translateY(20px);} 
+  to {opacity: 1; transform: translateY(0px);}
+}
+
 .details_container {
-    display: flex;
+    opacity: 0;
+    display: none;
     flex-direction: column;
     justify-content: center;
     bottom: 50px;
@@ -192,10 +211,16 @@ section {
     height: fit-content;
     row-gap: 10px;
     color: #fff;
+    animation: fadeAndMove 1s ease-out 0.5s;
+    animation-fill-mode: forwards;
 }
 
 .details_container * {
     position: relative;
+}
+
+.logo {
+    width: 20%;
 }
 .further_details {
     display: flex;
@@ -240,4 +265,9 @@ section {
 
 .prev i, .next i {
     position: initial;
+}
+
+.popular_container {
+    width: 70%;
+    height: 100px;
 }
