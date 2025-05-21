@@ -3,7 +3,7 @@
         "id": 0,
         "name": "Spirited Away",
         "desc": "A young girl, Chihiro, is transported to another world and finds herself in a strange new world.",
-        "thumb": "images/spiritedaway/thumb.png",
+        "thumb": "images/spiritedaway/thumb.webp",
         "logo": "images/spiritedaway/logo.svg",
         "poster": "images/spiritedaway/poster.png",
         "genres": [
@@ -40,7 +40,7 @@
         "id": 2,
         "name": "Tenet",
         "desc": "A secret agent goes undercover to infiltrate the world of international espionage.",
-        "thumb": "images/tenet/thumb.jpg",
+        "thumb": "images/tenet/thumb.avif",
         "logo": "images/tenet/logo.webp",
         "poster": "images/tenet/poster.png",
         "genres": [
