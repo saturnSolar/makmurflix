@@ -1,5 +1,12 @@
+//DISCLAIMER: This code is are made with barely any AI assistance, except for the comments because I'm too lazy to document everything lol!
+
 var xhttp = new XMLHttpRequest();
 var slideIndex = 1;
+/**
+ * Runs when the page has finished loading. Fetches the movie data from
+ * movies.json and calls displayFeatured to show the featured movies on the
+ * page.
+ */
 window.onload = function() {
   xhttp.open("GET", "movies.json", true);
   xhttp.onload = function() {
@@ -11,6 +18,17 @@ window.onload = function() {
   }
   xhttp.send();
 }
+
+/**
+ * Displays the featured movies by filtering the provided items for those 
+ * marked as featured. Each featured movie is represented as a slide containing 
+ * an image thumbnail and details. These slides are inserted into the 
+ * 'featured_container' element on the page. The function also initializes 
+ * the slideshow by calling showSlides with the current slide index.
+ *
+ * @param {Array} items - An array of movie objects, each containing properties 
+ * such as 'isFeatured', 'thumb', 'name', and 'logo'.
+ */
 
 function displayFeatured(items) {
   var container = document.getElementById("featured_container");
@@ -35,9 +53,6 @@ function displayFeatured(items) {
     
   showSlides(slideIndex);
 }
-
-
-
 
 // Next/previous controls
 function plusSlides(n, direction) {
