@@ -79,3 +79,13 @@ function showSlides(n, direction) {
     slides[slideIndex-1].style.display = "block";
     details[slideIndex-1].style.display = "flex"
 }
+
+function searchBar(state) {
+  var input = document.getElementsByClassName("searchbar");
+  if (state == 1) { input[0].style = "opacity: initial; width: 156px; margin-left: 10px;"; input[0].focus();}
+  else { input[0].style = "opacity: 0; width: 0; margin-left: 0;"; 
+    input[0].value = "";
+  }
+}
+
+var button = document.getElementById("btn-sign-in");
