@@ -109,6 +109,10 @@ header {
     color:#333;
 }
 
+#btn-sign-in:hover {
+    padding: 5px 15px;
+}
+
 main {
     font-family: "Verdana", sans-serif;
     color:#333;
