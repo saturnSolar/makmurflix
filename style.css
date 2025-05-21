@@ -229,7 +229,7 @@ h2 {
 }
 
 .details_container * {
-    position: relative;
+    position: relative !important;
 }
 
 .logo {
@@ -276,7 +276,7 @@ h2 {
     padding-right: 30px;
 }
 
-#prev i, .next i {
+#prev i, #next i {
     position: initial;
 }
 
