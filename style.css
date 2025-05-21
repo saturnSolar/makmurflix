@@ -289,11 +289,24 @@ h2 {
 
 .movie_list {
   
-    margin: 20px;
+    margin: 0 20px;
+    height: 300px;
+    overflow: auto;
 }
 
 .movie_item { 
+    display: flex;
+    justify-content:flex-start;
+    gap: 10px;
+    flex-direction: row;
     border: #000 solid 1px;
-    border-radius: 20px;
+    border-radius: 10px;
     margin: 10px;
+    padding: 10px;
+}
+
+.movie_item img {
+    width: 100px;
+    object-fit: cover;
+    border-radius: 10px;
 }
