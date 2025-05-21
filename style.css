@@ -152,7 +152,7 @@ h2 {
     margin: 0px;
 }
 
-.featured_container {
+#featured_container {
     position: relative;
     border-radius: 20px;
     overflow: hidden;
@@ -161,13 +161,13 @@ h2 {
     background-color: #000;
 }
 
-.featured_container * {
+#featured_container * {
     position: absolute;
 }
 
 
 
-.featured_container h2 {
+#featured_container h2 {
     color: #fff;
 }
 
