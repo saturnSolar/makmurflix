@@ -250,7 +250,7 @@ h2 {
 }
 
 
-.prev, .next {
+#prev, #next {
     cursor: pointer;
     position: absolute;
     top: 50%;
@@ -263,20 +263,20 @@ h2 {
     user-select: none;
 }
 
-.next {
+#next {
     right: 0;
     left: auto;
 }
 
-.prev:hover {
+#prev:hover {
     padding-left: 30px;
 }
 
-.next:hover {
+#next:hover {
     padding-right: 30px;
 }
 
-.prev i, .next i {
+#prev i, .next i {
     position: initial;
 }
 
