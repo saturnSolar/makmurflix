@@ -1,5 +1,43 @@
+var xhttp = new XMLHttpRequest();
 var slideIndex = 1;
-showSlides(slideIndex);
+window.onload = function() {
+  xhttp.open("GET", "movies.json", true);
+  xhttp.onload = function() {
+    if (xhttp.status === 200) {
+      var data = JSON.parse(xhttp.responseText);
+      displayFeatured(data);
+      // displayTop10(data);
+    }
+  }
+  xhttp.send();
+}
+
+function displayFeatured(items) {
+  var container = document.getElementById("featured_container");
+  var overlay = document.getElementById("featured_overlay_container");
+  var prev = document.getElementById("prev");
+
+  items.forEach(item => {
+    var card = document.createElement("div");
+    card.className = "mySlides";
+    card.innerHTML = `<img src="${item.thumb}" alt="${item.name}" class="thumb" style="width:100%">`
+    
+    container.insertBefore(card, overlay);
+    var details = document.createElement("div");
+    details.className = "details_container"
+    details.innerHTML = `
+      <img src=${item.logo} alt="${item.name}" class="logo" style="${item.logo_style}">
+      <div class="further_details"><div>${item.genres[0]}</div><div>${item.genres[1]}</div><div>${item.genres[2]}</div></div>
+    `
+    
+    container.insertBefore(details, prev);
+  });
+    
+  showSlides(slideIndex);
+}
+
+
+
 
 // Next/previous controls
 function plusSlides(n, direction) {
