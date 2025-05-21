@@ -1,3 +1,5 @@
+
+
 @font-face {
     font-family: Nintendo Font;
     src: url(3dsfont.otf);
@@ -69,7 +71,7 @@ header {
     list-style-type: none;
     background: none;
     border:#d1d1d1 solid 1px;
-    border-radius: 50px;
+    border-radius: 23px;
     margin: 0;
     padding: 8px 10px;
     overflow: hidden;
@@ -157,7 +159,12 @@ header {
     /* animation: show 0.5s cubic-bezier(0.075, 0.82, 0.165, 1); */
     
 }
+body {
+    margin: 0px;
+    padding: 0px;
+}
 
+/* Require responsiveness */
 main {
     font-family: "Verdana", sans-serif;
     color:#333;
@@ -170,11 +177,6 @@ main {
     background-color: #fbfbfb;
 }
 
-body {
-    margin: 0px;
-    padding: 0px;
-}
-
 section {
     padding: 20px;
     display: block;
@@ -182,16 +184,11 @@ section {
     border-radius: 20px;
 }
 
+/* Require responsiveness */
 .first_row {
     display: flex;
     flex-direction: row;
     justify-content: stretch;
-}
-
-@media (max-width: 800px) {
-    .first_row {
-        flex-direction: column;
-    }
 }
 
 h2 {
@@ -358,4 +355,14 @@ h2 {
     width: 100px;
     object-fit: cover;
     border-radius: 10px;
+}
+
+@media (max-width: 800px) {
+
+    main {
+        margin: 20px 50px;
+    }
+    .first_row {
+        flex-direction: column;
+    }
 }
