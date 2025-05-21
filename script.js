@@ -17,7 +17,7 @@ function displayFeatured(items) {
   var overlay = document.getElementById("featured_overlay_container");
   var prev = document.getElementById("prev");
 
-  items.forEach(item => {
+  items.filter(item => item.isFeatured).forEach(item => {
     var card = document.createElement("div");
     card.className = "mySlides";
     card.innerHTML = `<img src="${item.thumb}" alt="${item.name}" class="thumb" style="width:100%">`
