@@ -25,5 +25,4 @@ function showSlides(n, direction) {
     }
     slides[slideIndex-1].style.display = "block";
     details[slideIndex-1].style.display = "flex"
-    setTimeout(showSlides, 2000);
 }
