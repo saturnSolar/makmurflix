@@ -71,28 +71,24 @@ header {
     border:#d1d1d1 solid 1px;
     border-radius: 50px;
     margin: 0;
-    padding: 10px 0px 13px 10px;
+    padding: 8px 10px;
     overflow: hidden;
     transition: box-shadow 0.2s; 
-    
 }
 
+.navi > * {
+    margin-left: 10px;
+}
+
+.navi > *:first-child {
+    margin-left: 0;
+}
 .navi:hover {
     box-shadow: #adadad 0px 0px 15px 0px inset, #adadad 0px 0px 15px 0px;
 }
+
 .navi li {
     float: left;
-    margin: 0 10px 0px 0px;
-}
-.navi li a {
-    
-    color: #f9f9f9;
-    text-decoration: none;
-    font-size: 13px;
-    padding:  5px 15px 5px 15px;
-    text-align: center;
-    transition: all 0.2s cubic-bezier(0.075, 0.82, 0.165, 1);
-    
 }
 
 #home_button {
@@ -100,6 +96,17 @@ header {
     background-color: #d1d1d1;
     border-radius: 20px;
     padding: 5px 15px;
+}
+
+.navi li a {
+    display: inline-block;
+    color: #f9f9f9;
+    text-decoration: none;
+    font-size: 13px;
+    padding:  5px 15px 5px 15px;
+    text-align: center;
+    transition: all 0.2s cubic-bezier(0.075, 0.82, 0.165, 1);
+    
 }
 
 .navi li a:hover {
@@ -110,29 +117,45 @@ header {
     cursor: pointer;
 }
 
-#btn-sign-in {
-    padding: 5px 10px;
-    border-radius: 50px;
-}
-
 .searchbar {
-    transition: all 0.2s cubic-bezier(0.075, 0.82, 0.165, 1);
-    position: relative;
-    top: 1px;
-    display: initial;
-    width: 0px;
-    height: 13px;
-    opacity: 0;
+    display: inline-block;
     background: transparent;
+    background-image: url('icons/magnifying-glass-solid.svg');
+    background-repeat: no-repeat;
+    background-position: 10px;
+    background-size: 15px;
     border: none;
-    margin: 0;
-    overflow: visible;
+    filter: invert(1);
+    padding:  5px 15px 5px 15px;
+    width: 5px;
+    transition: all 0.2s cubic-bezier(0.075, 0.82, 0.165, 1);
     /* animation: show 0.5s cubic-bezier(0.075, 0.82, 0.165, 1); */
     
 }
 
+.searchbar:hover {
+    background-color: #d1d1d1;
+    border-radius: 20px;
+    color:#333;
+    filter: none;
+    cursor: pointer;
+}
+
 .searchbar:focus {
     outline: none;
+    background-color: #d1d1d1;
+    background-image: url('icons/magnifying-glass-solid.svg');
+    background-repeat: no-repeat;
+    background-position: 10px;
+    background-size: 15px; /* for some reason it persists to change lol */
+    border-radius: 20px;
+    filter: none;
+    padding-left: 40px;
+    margin: 0;
+    width: 200px;
+    
+    /* animation: show 0.5s cubic-bezier(0.075, 0.82, 0.165, 1); */
+    
 }
 
 main {
