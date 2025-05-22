@@ -334,7 +334,6 @@ h2 {
 }
 
 .movie_list {
-  
     margin: 0 20px;
     height: 300px;
     overflow: auto;
@@ -360,9 +359,17 @@ h2 {
     border-radius: 10px;
 }
 
+#popular_overlay_container {
+    position: absolute;
+    width: 100%;
+    height: 100px;
+    background: linear-gradient(to top, rgb(255, 0, 0), rgba(255, 255, 255, 0));
+}
+
 .pop_details {
     display: flex;
     flex-direction: column;
+    width: 100%;
 }
 
 .pop_details p {
@@ -375,8 +382,7 @@ h2 {
     font-family: Cascadia Code;
     margin-top: auto;
     text-align: center;
-    width: 100%;
-    padding: 10px 50px;
+    padding: 10px;
     border-radius: 20px;
     background-color: #dadada;
     transition: all 0.3s cubic-bezier(0.075, 0.82, 0.165, 1)
@@ -388,7 +394,7 @@ h2 {
     cursor: pointer;
 }
 
-@media (max-width: 800px) {
+@media (max-width: 1100px) {
 
     main {
         margin: 20px 50px;
