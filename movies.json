@@ -26,7 +26,7 @@
         "thumb": "images/ejenali/thumb.jpg",
         "logo": "images/ejenali/logo.png",
         "logo_style": "width: 280px;",
-        "poster": "images/ejenali/poster.png",
+        "poster": "images/ejenali/poster.jpg",
         "genres": [
             "Science Fiction",
             "Action",
@@ -45,7 +45,7 @@
         "thumb": "images/tenet/thumb.avif",
         "logo": "images/tenet/logo.webp",
         "logo_style": "width: 400px; margin-bottom: 20px;",
-        "poster": "images/tenet/poster.png",
+        "poster": "images/tenet/poster.webp",
         "genres": [
             "Action",
             "Science Fiction",
@@ -63,7 +63,7 @@
         "thumb": "images/flow/thumb.avif",
         "logo": "images/flow/logo.png",
         "logo_style": "width: 280px;",
-        "poster": "images/flow/poster.png",
+        "poster": "images/flow/poster.webp",
         "genres": [
             "Adventure",
             "Animation",
