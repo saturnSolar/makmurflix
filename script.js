@@ -19,6 +19,16 @@ window.onload = function() {
   xhttp.send();
 }
 
+function showMenu() {
+  var x = document.getElementsByClassName("navi")[0];
+  if (x.className === "navi") {
+    x.className += " responsive";
+  } else {
+    x.className = "navi";
+  }
+}
+
+
 /**
  * Displays the featured movies by filtering the provided items for those 
  * marked as featured. Each featured movie is represented as a slide containing 

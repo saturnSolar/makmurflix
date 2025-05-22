@@ -159,6 +159,16 @@ header {
     /* animation: show 0.5s cubic-bezier(0.075, 0.82, 0.165, 1); */
     
 }
+
+.menu-button {
+    display: none !important;
+
+}
+
+.menu-button i {
+    font-size: 15px;
+}
+
 body {
     margin: 0px;
     padding: 0px;
@@ -401,6 +411,70 @@ h2 {
     main {
         margin: 20px 50px;
     }
+    .navi {position: relative;}
+    .navi.responsive {position: relative;}
+    
+
+    .navi li:not(:first-child) {display: none;}
+
+    .navi.responsive li {
+        float: none;
+        display: block;
+        text-align: left;
+    }
+    .navi.responsive li:not(:first-child) {
+            
+            margin-left: 0;
+            margin-top: 5px;
+            width: 100%;
+    }
+
+    .navi.responsive li a {
+        width: 100%;
+        padding: 10px 0 !important;
+        margin: 0;
+    }
+    .menu-button {
+        display: inline-block !important;
+    }
+
+    .navi li[style="float:right"] {
+        display: block;
+        position: absolute;
+        top: 8px;
+        right: 12px;
+        pointer-events: none;
+    }
+
+    #home_button {
+        background: transparent;
+        color: #d1d1d1;
+        border: #d1d1d1 solid 1px;
+
+    }
+    
+    .navi.responsive .menu-button {    
+        display: block;
+        background-color: #d1d1d1;
+        border-radius: 20px;
+        padding: 5px 25px 5px 25px;
+        color:#333;
+        width: 50px;
+        padding: 5px 0 !important;
+        
+    }
+
+    .navi.responsive li[style="float:right"] {    
+        display: block;
+        top: 3px;
+    }
+
+    .searchbar {
+        float: right;
+        pointer-events: all;
+    }
+
+    
     .first_row {
         flex-direction: column;
     }
