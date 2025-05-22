@@ -13,7 +13,7 @@ window.onload = function() {
     if (xhttp.status === 200) {
       var data = JSON.parse(xhttp.responseText);
       displayFeatured(data);
-      // displayTop10(data);
+      displayTop10(data);
     }
   }
   xhttp.send();
@@ -52,6 +52,30 @@ function displayFeatured(items) {
   });
     
   showSlides(slideIndex);
+}
+
+function displayTop10(items) {
+  var container = document.getElementsByClassName("movie_list")[0];
+  
+  items.filter(itemCheck).forEach(item => {
+    console.log("hi");
+    var card = document.createElement("div");
+    card.className = "movie_item";
+    card.innerHTML = `
+    <img src="${item.poster}" class="poster" alt="${item.name}" style="width: 100px; height: 150px;">
+      <div class="pop_details">
+        <h4>${item.name}</h4>
+        <p>${item.year}</p>
+        <a class="btn-play">Details</a>
+      </div>
+    `
+    container.appendChild(card);
+  })
+  
+}
+
+function itemCheck(value, index) {
+  return index < 10;
 }
 
 // Next/previous controls
