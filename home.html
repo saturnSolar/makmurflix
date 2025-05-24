@@ -3,33 +3,13 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0" author="Afif">
-    <link rel="stylesheet" type="text/css" href="style.css">    
+    <link rel="stylesheet" type="text/css" href="home.css">    
     <script src="https://kit.fontawesome.com/8bd7cb800b.js" crossorigin="anonymous"></script>
+    <script src="include.js"></script>
     <title>Makmurflix</title>
 </head>
 <body>
-    <header>
-        <div class="title">
-            <h1>makmurflix</h1>
-        </div>
-        <p class="subtitle">The place for your entertainment.</p>
-        
-            <ul class="navi">
-                <li>
-                    <a href="#" class="menu-button" onclick="showMenu()"><i class="fa-solid fa-bars"></i></a>
-                </li>
-                <li style="margin-left: 0;"><a href="home.html" id="home_button"><i class="fa-solid fa-home"></i> Home</a></li>
-                <li><a href="movies.html">Movies</a></li>
-                <li><a href="cinemas.html">Cinemas</a></li>
-                <li><a href="comparison.html">Comparison</a></li>
-                <li><a href="events.html">Events</a></li>
-                <li><a href="about.html">About</a></li>
-                <li style="float:right">
-                        <input type="text" placeholder="" class="searchbar">
-                </li>
-                
-            </ul>
-    </header>
+    <header w3-include-html="header.html"></header>
 
     <main>
         <div class="first_row">
@@ -61,7 +41,8 @@
         </div>
     </main>
 
-
+    <script>includeHTML();</script>
     <script src="script.js"></script>
+    
 </body>
 </html>

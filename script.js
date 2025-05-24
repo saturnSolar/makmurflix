@@ -1,5 +1,21 @@
 //DISCLAIMER: This code is are made with barely any AI assistance, except for the comments because I'm too lazy to document everything lol!
 
+/**
+ * Waits for an element to be present in the DOM and calls the provided callback
+ * once it is. The callback is passed the element as an argument.
+ * @param {string} selector - A CSS selector to query for the element.
+ * @param {function} callback - The function to call once the element is present.
+ */
+function waitForElement(selector, callback) {
+    const interval = setInterval(() => {
+        const element = document.querySelector(selector);
+        if (element) {
+            clearInterval(interval);
+            callback(element);
+        }
+    }, 100); // Check every 100ms
+}
+
 var xhttp = new XMLHttpRequest();
 var slideIndex = 1;
 /**
@@ -68,7 +84,6 @@ function displayTop10(items) {
   var container = document.getElementsByClassName("movie_list")[0];
   
   items.filter(itemCheck).forEach(item => {
-    console.log("hi");
     var card = document.createElement("div");
     card.className = "movie_item";
     card.innerHTML = `
@@ -114,13 +129,17 @@ function showSlides(n, direction) {
     details[slideIndex-1].style.display = "flex"
 }
 
-var searchBar = document.getElementsByClassName("searchbar")[0];
+//var searchBar = document.getElementsByClassName("searchbar")[0];
 
-searchBar.addEventListener("focus", function() {
-  searchBar.placeholder = "Search";
-})
+waitForElement('.searchbar', function(element) {
+  element.addEventListener("focus", function() {
+    element.placeholder = "Search";
+  })
+});
 
-searchBar.addEventListener("blur", function() {
-  searchBar.placeholder = "";
-  searchBar.value = "";
-})
+waitForElement('.searchbar', function(element) {
+  element.addEventListener("blur", function() {
+    element.placeholder = "";
+    element.value = "";
+  })
+});
