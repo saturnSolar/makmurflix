@@ -1,3 +1,4 @@
+
 //DISCLAIMER: This code is are made with barely any AI assistance, except for the comments because I'm too lazy to document everything lol!
 
 /**
@@ -30,6 +31,7 @@ window.onload = function() {
       var data = JSON.parse(xhttp.responseText);
       displayFeatured(data);
       displayTop10(data);
+      displayUpcoming(data);
     }
   }
   xhttp.send();
@@ -80,6 +82,8 @@ function displayFeatured(items) {
   showSlides(slideIndex);
 }
 
+
+
 function displayTop10(items) {
   var container = document.getElementsByClassName("movie_list")[0];
   
@@ -102,6 +106,25 @@ function displayTop10(items) {
 function itemCheck(value, index) {
   return index < 10;
 }
+
+function displayUpcoming(items) {
+  const container = document.getElementsByClassName("upcoming_movie_list")[0];
+
+  items.forEach(item => {
+    var card = document.createElement("div");
+    card.className = "upcoming_movie_item";
+    card.innerHTML = `
+    <img src ="${item.poster}" class="upcoming_poster" alt="${item.name}">
+                    <div class="upcoming_overlay"></div>
+                    <div class="upcoming_details">
+                        <h4>${item.name}</h4>
+                        <p>${item.genres[0]}</p>
+                        <p>${item.year}</p>
+                    </div>`
+
+    container.appendChild(card);
+  }) 
+} 
 
 // Next/previous controls
 function plusSlides(n, direction) {
