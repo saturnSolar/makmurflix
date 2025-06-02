@@ -76,13 +76,7 @@ header {
     transition: box-shadow 0.2s; 
 }
 
-.navi > * {
-    margin-left: 10px;
-}
 
-.navi > *:first-child {
-    margin-left: 0;
-}
 .navi:hover {
     box-shadow: #adadad 0px 0px 15px 0px inset, #adadad 0px 0px 15px 0px;
 }
@@ -96,6 +90,7 @@ header {
     background-color: #d1d1d1;
     border-radius: 20px;
     padding: 5px 15px;
+    margin-right: 10px;
 }
 
 .navi li a {
