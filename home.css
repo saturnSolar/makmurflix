@@ -164,6 +164,7 @@ h2 {
 
 .further_details * {
     position: relative;
+    margin: 0 5px;
 }
 
 
@@ -365,5 +366,17 @@ h2 {
     }
     #featured_container {
         width: 100%;
+    }
+
+}
+
+@media (max-width: 500px) {
+    .details_container {
+        left: 50px;
+        width: 70%;
+    }
+
+    .logo {
+        width: 100% !important;
     }
 }
