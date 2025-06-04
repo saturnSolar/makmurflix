@@ -75,6 +75,15 @@ h1 {
     border: #f1f1f1 solid 1px;
     border-radius: 20px;
     font-family: 'Cascadia Code', sans-serif;
+    transition: all 0.3s cubic-bezier(0.075, 0.82, 0.165, 1);
+}
+
+.container-genre *:hover {
+    transform: scale(1.05);
+    background-color: #f1f1f1;
+    color: #333;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 2px 10px 0 rgba(0, 0, 0, 0.19);
+    cursor: pointer;
 }
 
 .synopsis {
