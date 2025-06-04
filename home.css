@@ -259,6 +259,8 @@ h2 {
     padding: 10px;
     border-radius: 20px;
     background-color: #dadada;
+    color: #333;
+    text-decoration: none;
     transition: all 0.3s cubic-bezier(0.075, 0.82, 0.165, 1)
 }
 
@@ -288,6 +290,10 @@ h2 {
     transition: all 0.3s cubic-bezier(0.075, 0.82, 0.165, 1);
     box-shadow: none;
     min-width: 200px;
+}
+
+.upcoming_poster {
+    background-color: #000;
 }
 
 .upcoming_overlay {
