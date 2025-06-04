@@ -95,7 +95,7 @@ function displayTop10(items) {
       <div class="pop_details">
         <h4>${item.name}</h4>
         <p>${item.year}</p>
-        <a class="btn-play">Details</a>
+        <a href="movie.html?id=${item.id}" class="btn-play">Details</a>
       </div>
     `
     container.appendChild(card);
@@ -115,7 +115,7 @@ function displayUpcoming(items) {
     card.className = "upcoming_movie_item";
     card.innerHTML = `
     <img src ="${item.poster}" class="upcoming_poster" alt="${item.name}">
-                    <div class="upcoming_overlay"></div>
+                    <div class="upcoming_overlay" onclick="window.location.href='movie.html?id=${item.id}'"></div>
                     <div class="upcoming_details">
                         <h4>${item.name}</h4>
                         <p>${item.genres[0]}</p>
