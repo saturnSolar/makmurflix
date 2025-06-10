@@ -44,10 +44,10 @@ const moviePrices = {
 };
 
 const movieSelect = document.getElementById('movie-select');
-const cinema1 = document.getElementById('cinema1');
-const cinema2 = document.getElementById('cinema2');
 const ticketPricesDiv = document.getElementById('ticket-prices');
 const cinemaSelect = document.getElementsByClassName('cinema-selector');
+var cinema1;
+var cinema2;
 
 const updateTicketPrices = () => {
     const selectedMovie = movieSelect.value;
@@ -79,8 +79,31 @@ fetch("cinemas.json")
                 const option = document.createElement('option');
                 option.value = cinemadata.id;
                 option.textContent = cinemadata.name;
+                option.addEventListener('click', function() {
+                    cinemaSelect[x].querySelector('p').innerHTML = cinemadata.name;
+                    cinemaSelect[x].value = cinemadata.id;
+                    console.log(cinemaSelect[x].value);
+                });
                 dropdownMenu.appendChild(option);
             }
+        }
+    })
+
+fetch("movies.json")
+    .then(res => res.json())
+    .then(data => {
+        const dropdownMenu = movieSelect.getElementsByClassName('movie-dropdown-menu')[0];
+        for (let x = 0; x < data.length; x++) {
+            const moviedata = data[x];
+            const option = document.createElement('option');
+            option.value = moviedata.id;
+            option.textContent = moviedata.name;
+            option.addEventListener('click', function() {
+                movieSelect.querySelector('label').innerHTML = moviedata.name;
+                movieSelect.value = moviedata.id;
+                console.log(movieSelect.value);
+            });
+            dropdownMenu.appendChild(option);
         }
     })
 
