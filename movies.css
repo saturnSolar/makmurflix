@@ -36,6 +36,7 @@ main {
 }
 
 .movies-header button {
+  position: relative;
   padding: 0.5em 1em;
   border: none;
   border-radius: 6px;
@@ -44,14 +45,38 @@ main {
   margin-left: 0.5em;
 }
 
+.filter-cont {
+  position: absolute;
+  left: 0;
+  background-color: #e0e0e0;
+  border-radius: 6px;
+  top: 35px;
+  overflow:hidden;
+}
+
+.filter-cont.hidden {
+  display: none;
+}
+
+.filter-cont * {
+  padding: 10px 20px;
+}
+
+.filter-cont *:hover {
+  background-color: #d0d0d0;
+}
+
 .movie-grid {
-  display: grid;
+  display: flex;
+  flex-wrap: wrap;
   grid-template-columns: repeat(auto-fill, minmax(180px, 1fr));
   gap: 1.5em;
   margin-top: 2em;
 }
 
 .movie-card {
+  width: 200px;
+  height: auto;
   background: #fff;
   border-radius: 10px;
   box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
@@ -64,14 +89,13 @@ main {
 
 .movie-card img {
   width: 100%;
-  height: 270px;
+  height: 300px;
   object-fit: cover;
   border-radius: 6px;
 }
 
 .movie-info {
   margin-top: 0.5em;
-  height: 100%;
   display: flex;
   flex-direction: column;
   justify-content: flex-end;
@@ -79,6 +103,9 @@ main {
 
 .movie-info h3 {
   font-size: 1em;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
   margin: 0.5em 0;
 }
 
