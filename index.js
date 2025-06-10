@@ -156,16 +156,3 @@ function showSlides(n, direction) {
 }
 
 //var searchBar = document.getElementsByClassName("searchbar")[0];
-
-waitForElement('.searchbar', function(element) {
-  element.addEventListener("focus", function() {
-    element.placeholder = "Search";
-  })
-});
-
-waitForElement('.searchbar', function(element) {
-  element.addEventListener("blur", function() {
-    element.placeholder = "";
-    element.value = "";
-  })
-});
