@@ -95,12 +95,14 @@ main {
     display: flex;
     flex-direction: column;
     width: 50%;
+    gap: 20px;
     padding: 0 20px;
 }
 
 
 .cinema-title {
     font-weight: lighter;
+    margin: 0;
 }
 
 .cinema-title.right {
