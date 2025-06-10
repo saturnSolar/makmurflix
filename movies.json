@@ -110,6 +110,101 @@
         "year": 2025,
         "rating": 6.6,
         "duration": 110,
+        "isFeatured": false,
+        "isUpcoming": true
+    },
+    {
+        "id": 6,
+        "name": "How to Train Your Dragon",
+        "desc": "On the rugged isle of Berk, a Viking boy named Hiccup defies centuries of tradition by befriending a dragon named Toothless. However, when an ancient threat emerges that endangers both species, Hiccup's friendship with Toothless becomes the key to forging a new future. Together, they must navigate the delicate path toward peace, soaring beyond the boundaries of their worlds and redefining what it means to be a hero and a leader.",
+        "thumb": "images/howtotrain/bg.jpg",
+        "logo": "images/howtotrain/logo.webp",
+        "logo_style": "width: 300px;",
+        "poster": "images/howtotrain/poster.jpeg",
+        "genres": [
+            "Adventure",
+            "Fantasy",
+            "Action"
+        ],
+        "year": 2025,
+        "rating": 6.6,
+        "duration": 110,
+        "isFeatured": true,
+        "isUpcoming": true
+    },
+    {
+        "id": 7,
+        "name": "Keluang Man",
+        "desc": "A psychiatric patient named Borhan transforms into a masked vigilante superhero.",
+        "thumb": "images/keluangman/bg.jpeg",
+        "logo": "images/keluangman/logo.png",
+        "logo_style": "width: 400px; height: 200px; object-fit: cover; object-position: top;",
+        "poster": "images/keluangman/poster.jpg",
+        "genres": [
+            "Adventure",
+            "Comedy",
+            "Action"
+        ],
+        "year": 2025,
+        "rating": 6.6,
+        "duration": 110,
+        "isFeatured": true,
+        "isUpcoming": true
+    },
+    {
+        "id": 8,
+        "name": "Final Destination Bloodlines",
+        "desc": "Plagued by a recurring violent nightmare, a college student returns home to find the one person who can break the cycle and save her family from the horrific fate that inevitably awaits them.",
+        "thumb": "images/finaldestination/bg.webp",
+        "logo": "images/finaldestination/logo.png",
+        "logo_style": "width: 300px",
+        "poster": "images/finaldestination/poster.jpg",
+        "genres": [
+            "Horror",
+            "Gore",
+            "Action"
+        ],
+        "year": 2025,
+        "rating": 6.6,
+        "duration": 110,
+        "isFeatured": true,
+        "isUpcoming": true
+    },
+    {
+        "id": 9,
+        "name": "Thunderbolts*",
+        "desc": "After finding themselves ensnared in a death trap, an unconventional team of antiheroes must go on a dangerous mission that will force them to confront the darkest corners of their pasts.",
+        "thumb": "images/thunderbolts/bg.jpeg",
+        "logo": "images/thunderbolts/logo.png",
+        "logo_style": "width: 400px; height: 80px; object-fit: cover; object-position: top;",
+        "poster": "images/thunderbolts/poster.jpg",
+        "genres": [
+            "Adventure",
+            "Fantasy",
+            "Action"
+        ],
+        "year": 2025,
+        "rating": 6.6,
+        "duration": 110,
+        "isFeatured": false,
+        "isUpcoming": true
+    },
+    {
+        "id": 10,
+        "name": "Mission Impossible: The Final Reckoning",
+        "desc": "Our lives are the sum of our choices. Tom Cruise is Ethan Hunt in Mission: Impossible - The Final Reckoning.",
+        "thumb": "images/missionimpossible/bg.avif  ",
+        "logo": "images/missionimpossible/logo.png",
+        "logo_style": "width: 400px;",
+        "poster": "images/missionimpossible/poster.jpg",
+        "genres": [
+            "Adventure",
+            "Thriller",
+            "Action"
+        ],
+        "year": 2025,
+        "rating": 6.6,
+        "duration": 110,
         "isFeatured": true,
         "isUpcoming": true
     }
