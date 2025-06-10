@@ -1,0 +1,138 @@
+
+body {
+    margin: 0px;
+    padding: 0px;
+}
+
+/* Require responsiveness */
+main {
+    font-family: "Verdana", sans-serif;
+    color:#333;
+    display:block;
+    box-shadow: 0px 5px 25px rgba(0, 0, 0, .2);
+    padding: 0px;
+    margin: 20px 100px;
+    border-radius: 20px;
+    overflow: hidden;
+    background-color: #555555;
+}
+
+/* Require responsiveness */
+
+
+@media (max-width: 1100px) {
+
+    main {
+        margin: 20px 50px;
+    }
+}
+
+h1 {
+  color: white;
+}
+
+
+.cinema-list {
+  display: flex;
+  gap: 20px;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.cinema-card {
+  position: relative;
+  width: 90%;
+  height:180px;
+  border-radius: 10px;
+  overflow: hidden;
+  cursor: pointer;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  align-items: flex-end;
+  padding: 10px;
+  color: white;
+  transition: all 0.2s ease-in-out;
+
+}
+
+.cinema-card:hover {
+  width: 95%;
+  height: 200px; 
+  background-color: #f2f2f2;
+  box-shadow: 0 0 10px #adadad;
+}
+
+/* .fade-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 50%;
+    height: 100%;
+    background: linear-gradient(to right, grey 60%,transparent);
+    z-index: 2;
+}
+*/
+
+.cinema-overlay {
+  background: rgba(44, 43, 43, 0.5);
+  padding: 5px;
+  width: 100%;
+}
+
+.cinema-logo {
+  float: left;
+  width: 100px;
+  height: auto;
+  vertical-align: middle;
+  margin-right: 5px;
+}
+
+.status-dot {
+  height: 10px;
+  width: 10px;
+  border-radius: 50%;
+  display: inline-block;
+  margin-right: 5px;
+}
+
+.open { background-color: green; }
+.closed { background-color: red; }
+
+/* Popup styling */
+.popup {
+  visibility: hidden;
+  position: absolute;
+  top: 10%; left: 0;
+  background: #f1f1f1;
+  padding: 10px;
+  transition: opacity 0.2s ease-in-out;
+  opacity: 0;
+  overflow: hidden;
+  padding: 10px;
+  border-radius: 10px;
+  width: 0;
+  height: 0;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+}
+
+.popup p {
+  color: #1f1f1f;
+}
+
+.show {
+  visibility: visible;
+  min-width: 400px;
+  height: auto;
+  opacity: 100%;
+}
+
+.close-btn {
+  float: right;
+  font-size: 20px;
+  cursor: pointer;
+}
+
+.hidden { display: none; }
+
