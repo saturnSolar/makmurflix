@@ -39,7 +39,7 @@ function displayMovie(data) {
                 <hr>
                 <p><span style="font-weight: bold;">Cast</span> ${movie.cast}</p>
                 <hr>
-                <div class="btn">Find available cinema</div>
+                <div class="btn" onclick="window.location.href='comparison.html'";>Find available cinema</div>
             </div>
         </div>
         `
