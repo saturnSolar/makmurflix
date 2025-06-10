@@ -84,14 +84,14 @@ fetch("movies.json")
 
 function toggleMovieDropDown() {
     const movieDropdownMenu = document.getElementsByClassName('movie-dropdown-menu')[0];
-    console.log("hi");
+    // console.log("hi");
     movieDropdownMenu.classList.toggle('hidden');
 }
 
 for (let x = 0; x < cinemaSelect.length; x++) {
     const cinema = cinemaSelect[x];
     cinema.addEventListener('click', function() {
-        console.log("hello" + cinema.parentNode.id);
+        // console.log("hello" + cinema.parentNode.id);
         const dropdownMenu = cinema.getElementsByClassName('cinema-dropdown-menu')[0];
         dropdownMenu.classList.toggle('hidden');
         cinema.classList.toggle('active');
@@ -111,12 +111,10 @@ document.addEventListener('click' , function(event) {
 })
 
 function Compare() {
-    console.log(movie);
-    console.log(cinema1);
-    console.log(cinema2);
+    console.log("Movie: " + movie + ", Cinema1: " + cinema1 + ", Cinema2: " + cinema2);
     const cinema1Select = document.getElementById('cinema1');
     const cinema2Select = document.getElementById('cinema2');
-    console.log(cinema1Select);
+    // console.log(cinema1Select);
     if (movie && cinema1 && cinema2) {
         fetch("data.json")
             .then(res => res.json())
@@ -137,7 +135,7 @@ function display(cinema, data) {
     const itemcont = cinema.getElementsByClassName('item-cont');
     const warningmessage =cinema.getElementsByClassName('warning-message')[0];
     console.log(itemcont);
-    console.log("HI");
+    // console.log("HI");
     warningmessage.classList.add('hidden');
     for (let x = 0; x < itemcont.length; x++) {
         itemcont[x].classList.remove("hidden");
@@ -147,7 +145,7 @@ function display(cinema, data) {
     const datecontainer = itemcont[0].querySelector('article').querySelector('section');
     const timeline = datecontainer.parentNode.getElementsByClassName('timeline-cont')[0].getElementsByClassName('dot-cont')[0];
     timeline.innerHTML = '';
-    console.log(datecontainer);
+    // console.log(datecontainer);
     let air = data.air;
     for (let x = 0; x < air.length; x++) {
         if (air[x].movieid == movie) {
@@ -161,11 +159,11 @@ function display(cinema, data) {
                     <h5 class="month">${air[x].availability[availability].date.month}</h5>`
                 day.addEventListener('click', function() {
                     const index = Array.from(datecontainer.children).indexOf(day);
-                    console.log(index);
+                    // console.log(index);
                     const timeavailable = air[x].availability[index].time;
-                    console.log(index);
-                    console.log(availability);
-                    console.log(timeavailable);
+                    // console.log(index);
+                    // console.log(availability);
+                    // console.log(timeavailable);
                     timeline.innerHTML = '';
                     for (let i = 0; i < timeavailable.length; i++) {
                         const time = document.createElement('div');
@@ -181,7 +179,7 @@ function display(cinema, data) {
     }
 
     const experiences = data.experiences;
-    console.log(experiences);
+    // console.log(experiences);
     const experiencecont = itemcont[1].getElementsByClassName('experience-cont')[0];
     experiencecont.innerHTML = '';
     var actualExperiencesData;
@@ -189,7 +187,7 @@ function display(cinema, data) {
         .then(res => res.json())
         .then(data => {
             actualExperiencesData = data;
-            console.log(actualExperiencesData);
+            // console.log(actualExperiencesData);
             for (x in experiences) {
                 const experience = document.createElement('div');
                 experience.className = 'exp';
@@ -198,4 +196,19 @@ function display(cinema, data) {
                 experiencecont.appendChild(experience);
             }
         })
+    
+    const pricing = data.price;
+    const pricingcont = itemcont[2].getElementsByClassName('pricing-cont')[0];
+    pricingcont.innerHTML = '';
+    for (x in pricing) {
+        if (x == movie) {
+            const price = document.createElement('div');
+            price.className = 'price';
+            price.innerHTML = `
+                <h3>Standard</h3>
+                <p>RM${pricing[x].toFixed(2)}</p>`;
+            pricingcont.appendChild(price);
+            break;
+        }
+    }
 }
