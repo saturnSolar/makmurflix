@@ -211,4 +211,13 @@ function display(cinema, data) {
             break;
         }
     }
+
+    const map = data.map;
+    const mapcont = itemcont[3].getElementsByClassName('map-cont')[0];
+    mapcont.innerHTML = '';
+    const iframe = document.createElement('iframe');
+    iframe.src = map;
+    iframe.class = 'map';
+    mapcont.appendChild(iframe);
+
 }

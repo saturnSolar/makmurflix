@@ -19,6 +19,7 @@
             1,
             3
         ],
+        "map": "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d7093.266855180462!2d103.3192528525886!3d3.818573052592785!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x31c8ba925ac07b75%3A0xad39b7be6f32fdb!2sGSC%20East%20Coast%20Mall!5e0!3m2!1sen!2smy!4v1749595178020!5m2!1sen!2smy",
         "air": [
             {
                 "movieid": 1,
@@ -58,12 +59,28 @@
                             "dayofweek": "THU"
                         },
                         "time": [
-                            "10",
+                            "9",
                             "12",
                             "14",
                             "16",
                             "18",
-                            "20"
+                            "24"
+                        ]
+                    },
+                    {
+                        "date" : {
+                            "day": 17,
+                            "month": "JUN",
+                            "dayofweek": "FRI"
+                        },
+                        "time": [
+                            "9",
+                            "12",
+                            "13",
+                            "17.5",
+                            "18",
+                            "19",
+                            "24"
                         ]
                     }
                 ]
@@ -330,6 +347,7 @@
             0,
             1
         ],
+        "map": "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d5794.907078541055!2d103.32201336749236!3d3.817406420926376!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x31c8bbad24d4916d%3A0xa73ae30f8e7e3b96!2sGSC%20Kuantan%20City%20Mall!5e0!3m2!1sen!2smy!4v1749595550882!5m2!1sen!2smy",
         "air": [
             {
                 "movieid": 1,
@@ -642,6 +660,318 @@
             0,
             2
         ],
+        "map": "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d7964.996397273743!2d102.32482984444022!3d3.4712560000000052!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x31ceba13cc0a15cf%3A0x8a3ec934e93d0a56!2sGSC%20Mentakab%20Star%20Mall!5e0!3m2!1sen!2smy!4v1749595639147!5m2!1sen!2smy",
+       "air": [
+            {
+                "movieid": 1,
+                "availability": [
+                    {
+                        "date" : {
+                            "day": 14,
+                            "month": "JUN",
+                            "dayofweek": "TUE"
+                        },
+                        "time": [
+                            "11",
+                            "13",
+                            "15",
+                            "17",
+                            "19"
+                        ]
+                    },
+                    {
+                        "date" : {
+                            "day": 15,
+                            "month": "JUN",
+                            "dayofweek": "WED"
+                        },
+                        "time": [
+                            "13",
+                            "15",
+                            "17",
+                            "19",
+                            "21"
+                        ]
+                    },
+                    {
+                        "date" : {
+                            "day": 16,
+                            "month": "JUN",
+                            "dayofweek": "THU"
+                        },
+                        "time": [
+                            "10",
+                            "12",
+                            "14",
+                            "16",
+                            "18",
+                            "20"
+                        ]
+                    }
+                ]
+            },
+            {
+                "movieid": 4,
+                "availability": [
+                    {
+                        "date" : {
+                            "day": 14,
+                            "month": "JUN",
+                            "dayofweek": "TUE"
+                        },
+                        "time": [
+                            "11",
+                            "13",
+                            "15",
+                            "17",
+                            "19"
+                        ]
+                    },
+                    {
+                        "date" : {
+                            "day": 15,
+                            "month": "JUN",
+                            "dayofweek": "WED"
+                        },
+                        "time": [
+                            "13",
+                            "15",
+                            "17",
+                            "19",
+                            "21"
+                        ]
+                    },
+                    {
+                        "date" : {
+                            "day": 17,
+                            "month": "JUN",
+                            "dayofweek": "THU"
+                        },
+                        "time": [
+                            "10",
+                            "12",
+                            "14",
+                            "16",
+                            "18",
+                            "20"
+                        ]
+                    }
+                ]
+            },
+            {
+                "movieid": 5,
+                "availability": [
+                    {
+                        "date" : {
+                            "day": 14,
+                            "month": "JUN",
+                            "dayofweek": "TUE"
+                        },
+                        "time": [
+                            "11",
+                            "13",
+                            "15",
+                            "17",
+                            "19"
+                        ]
+                    },
+                    {
+                        "date" : {
+                            "day": 15,
+                            "month": "JUN",
+                            "dayofweek": "WED"
+                        },
+                        "time": [
+                            "13",
+                            "15",
+                            "17",
+                            "19",
+                            "21"
+                        ]
+                    },
+                    {
+                        "date" : {
+                            "day": 17,
+                            "month": "JUN",
+                            "dayofweek": "THU"
+                        },
+                        "time": [
+                            "10",
+                            "12",
+                            "14",
+                            "16",
+                            "18",
+                            "20"
+                        ]
+                    }
+                ]
+            },
+            {
+                "movieid": 6,
+                "availability": [
+                    {
+                        "date" : {
+                            "day": 14,
+                            "month": "JUN",
+                            "dayofweek": "TUE"
+                        },
+                        "time": [
+                            "11",
+                            "13",
+                            "15",
+                            "17",
+                            "19"
+                        ]
+                    },
+                    {
+                        "date" : {
+                            "day": 15,
+                            "month": "JUN",
+                            "dayofweek": "WED"
+                        },
+                        "time": [
+                            "13",
+                            "15",
+                            "17",
+                            "19",
+                            "21"
+                        ]
+                    },
+                    {
+                        "date" : {
+                            "day": 17,
+                            "month": "JUN",
+                            "dayofweek": "THU"
+                        },
+                        "time": [
+                            "10",
+                            "12",
+                            "14",
+                            "16",
+                            "18",
+                            "20"
+                        ]
+                    }
+                ]
+            },
+            {
+                "movieid": 7,
+                "availability": [
+                    {
+                        "date" : {
+                            "day": 14,
+                            "month": "JUN",
+                            "dayofweek": "TUE"
+                        },
+                        "time": [
+                            "11",
+                            "13",
+                            "15",
+                            "17",
+                            "19"
+                        ]
+                    },
+                    {
+                        "date" : {
+                            "day": 15,
+                            "month": "JUN",
+                            "dayofweek": "WED"
+                        },
+                        "time": [
+                            "13",
+                            "15",
+                            "17",
+                            "19",
+                            "21"
+                        ]
+                    },
+                    {
+                        "date" : {
+                            "day": 17,
+                            "month": "JUN",
+                            "dayofweek": "THU"
+                        },
+                        "time": [
+                            "10",
+                            "12",
+                            "14",
+                            "16",
+                            "18",
+                            "20"
+                        ]
+                    }
+                ]
+            },
+            {
+                "movieid": 8,
+                "availability": [
+                    {
+                        "date" : {
+                            "day": 14,
+                            "month": "JUN",
+                            "dayofweek": "TUE"
+                        },
+                        "time": [
+                            "11",
+                            "13",
+                            "15",
+                            "17",
+                            "19"
+                        ]
+                    },
+                    {
+                        "date" : {
+                            "day": 15,
+                            "month": "JUN",
+                            "dayofweek": "WED"
+                        },
+                        "time": [
+                            "13",
+                            "15",
+                            "17",
+                            "19",
+                            "21"
+                        ]
+                    },
+                    {
+                        "date" : {
+                            "day": 17,
+                            "month": "JUN",
+                            "dayofweek": "THU"
+                        },
+                        "time": [
+                            "10",
+                            "12",
+                            "14",
+                            "16",
+                            "18",
+                            "20"
+                        ]
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "cinemaid": 4,
+        "price": {
+            "0": 14,
+            "1": 25,
+            "2": 24,
+            "3": 12,
+            "4": 21,
+            "5": 23.25,
+            "6": 38.10,
+            "7": 20.50,
+            "8": 16,
+            "9": 22,
+            "10": 16,
+            "11": 19
+       },
+    "experiences": [
+            0
+        ],
+        "map": "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2367.103671894204!2d103.32820191085207!3d3.8150117687022536!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x31c8bb004fb6006b%3A0x7a38887b8fd92a3b!2sAE%20CINEMAS%20KUANTAN!5e0!3m2!1sen!2smy!4v1749595695072!5m2!1sen!2smy",
        "air": [
             {
                 "movieid": 1,
