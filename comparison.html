@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="comparison.css">
+    <script src="https://kit.fontawesome.com/8bd7cb800b.js" crossorigin="anonymous"></script>
+    <script src="include.js"></script>
+    <title>Movie Selection</title>
+</head>
+<body>
+    <header w3-include-html="header.html">
+      
+    </header>
+
+    <main>
+        <div id="movie-select" onclick="toggleMovieDropDown()">
+            <i class="fa-solid fa-chevron-right"></i>
+            <label>Select a movie</label>
+            
+            <div class="movie-dropdown-menu hidden">
+                <option value="spirited_away">Spirited Away</option>
+                <option value="ejen_ali_2">Ejen Ali The Movie 2</option>
+                <option value="tenet">Tenet</option>
+                <option value="flow">Flow</option>
+                <option value="blood_brothers">Blood Brothers</option>
+                <option value="karate_kid">Karate Kid Legends</option>
+                <option value="how_to_train_dragon">How to Train Your Dragon</option>
+                <option value="keluang_man">Keluang Man</option>
+                <option value="lilo_stitch">Lilo & Stitch</option>
+                <option value="final_destination">Final Destination Bloodlines</option>
+                <option value="thunderbolts">Thunderbolts</option>
+                <option value="kaiju_no_8">Kaiju No 8</option>
+            </div> 
+        </div>
+
+        <div id="separator-cont">
+            <div class="cinema-cont" id="cinema1">
+                <h1 class="cinema-title left">Cinema #1</h1>    
+                <div class="cinema-selector">
+                    <i class="fa-solid fa-chevron-down"></i>
+                    <p style="margin: 0">Select a cinema...</p>
+                    <div class="cinema-dropdown-menu hidden">
+                    </div>
+                </div>
+
+                <div id="ticket-prices"></div>
+                <article id="schedule-container">
+                    <section id="date-cont"> 
+                        <div class="day-cont"> 
+                            <h5 class="day">   MON </h5>
+                            <h2 class="date">   04 </h2>
+                            <h5 class="month"> JUN </h5>
+                        </div>
+                    </section>
+
+                    <section id="timeline-cont"> 
+                        <div id="timeline"> </div>
+                    </section>
+
+                    <section id="indicator">
+                        <div class="main"> </div>
+                        
+                        <div class="sub"> </div>
+                        <div class="sub"> </div>
+
+                        <div class="main"> </div>
+                        
+                        <div class="sub"> </div>
+                        <div class="sub"> </div>
+
+                        <div class="main"> </div>
+                        
+                        <div class="sub"> </div>
+                        <div class="sub"> </div>
+                        
+                        <div class="main"> </div>
+
+                        <div class="sub"> </div>
+                        <div class="sub"> </div>
+                        
+                        <div class="main"> </div>
+                    </section>
+
+                    <section id="time-cont">
+                        <div class="time">
+                            <h2 class="time-value"> 08 </h2>
+                            <h3 class="am-pm"> AM   </h3>
+                        </div>
+                        <div class="time">
+                            <h2 class="time-value"> 12 </h2>
+                            <h3 class="am-pm"> PM   </h3>
+                        </div>
+                        <div class="time">
+                            <h2 class="time-value"> 04 </h2>
+                            <h3 class="am-pm"> PM   </h3>
+                        </div>
+                        <div class="time">
+                            <h2 class="time-value"> 08 </h2>
+                            <h3 class="am-pm"> PM   </h3>
+                        </div>
+                        <div class="time">
+                            <h2 class="time-value"> 12 </h2>
+                            <h3 class="am-pm"> AM   </h3>
+                        </div>
+                    </section>
+                </article>
+            </div>
+            <div id="separator-line"></div>
+
+            <div class="cinema-cont" id="cinema2">
+                <h1 class="cinema-title right">Cinema #2</h1>
+                <div class="cinema-selector">
+                    <i class="fa-solid fa-chevron-down"></i>
+                    <p style="margin: 0">Select a cinema...</p>
+                    <div class="cinema-dropdown-menu hidden">
+                    </div>
+                </div>
+            </div>
+        </div>
+        <script>includeHTML();</script>
+        <script src="comparison.js"></script>
+    </main>
+</body>
+</html>
