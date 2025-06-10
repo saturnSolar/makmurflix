@@ -14,9 +14,12 @@ window.onload = function() {
 }
 
 function displayMovie(data) {
+    const title = document.querySelector('title');
+    
     const container = document.getElementsByClassName("container")[0];
 
     const movie = data[movieId];
+    title.textContent = movie.name + " | Makmurflix";
     if (movie) {
         container.innerHTML = `
         <h1>${movie.name}</h1>
