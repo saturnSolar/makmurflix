@@ -18,11 +18,13 @@ fetch('cinemas.json')
         </div>
         <div class="cinema-overlay">
           <img src="${cinema.logo}" class="cinema-logo">
-          <span class="status-dot ${cinema.status === 'open' ? 'open' : 'closed'}"></span>
-          <span>${cinema.name}</span><br>
-          <span>⭐ ${cinema.rating}</span><br>
-          <span>📍 ${cinema.city}</span>
+          <div class="details">
+            <span class="status-dot ${cinema.status === 'open' ? 'open' : 'closed'}"></span>
+            <span>${cinema.name}</span><br>
+            <span><span style="color: #FFD700;">★</span> ${cinema.rating}</span><br>
+            <span>📍${cinema.city}</span>
           </div>
+        </div>
       `;
 
       card.addEventListener('click', (event) => {
