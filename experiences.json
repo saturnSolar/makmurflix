@@ -1,0 +1,22 @@
+[
+    {
+        "id": 1,
+        "name": "2d",
+        "icon": "icons/2d.png"
+    },
+        {
+        "id": 2,
+        "name": "Dolby Atmos",
+        "icon": "icons/dolby.png"
+},
+    {
+        "id": 3,
+        "name": "IMAX",
+        "icon": "icons/imax.svg"
+},
+    {
+        "id": 4,
+        "name": "play",
+        "icon": "icons/play.svg"
+}
+]
