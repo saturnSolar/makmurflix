@@ -15,26 +15,22 @@
     </header>
         
     <main>
-               <section class="cinemas">
-      <div class="controls">
-        <h1>  Cinemas</h1>
-        <button><i class="fa-solid fa-bars"></i> Filter</button>
-        <button><i class="fa-solid fa-sort"></i> Sort</button>
-      <script>includeHTML();</script>
-      </div>
-      <div class="cinema-list" id="cinemaList"></div>
-      <div id="cinemaDetailPopup" class="popup hidden">
-      <div class="popup-content">
-      <span class="close-btn" onclick="closePopup()">×</span>
-      <h2 id="cinemaName"></h2>
-      <p id="cinemaStatus"></p>
-      <p id="cinemaRating"></p>
-    </div>
-  </div>
-
-    </section>
+      <section class="cinemas">
+        <div class="controls">
+          <h1>Cinemas</h1>
+          <button><i class="fa-solid fa-bars"></i> Filter</button>
+          <button><i class="fa-solid fa-sort"></i> Sort</button>
+        </div>
+        <div class="cinema-list" id="cinemaList"></div>
+        <div id="cinemaDetailPopup" class="popup hidden">
+          <h2 id="cinemaName"></h2>
+          <p id="cinemaStatus"></p>
+          <p id="cinemaRating"></p>
+        </div>
+     </section>
     </main>
-    
+
+    <script>includeHTML();</script>
     <script src="cinemas.js"></script>
     <script src="header.js"></script>
 </body>
