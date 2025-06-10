@@ -1,32 +1,36 @@
-{
-    "gsc_east_coast": {
-        "spirited_away": 19,
-        "ejen_ali_2": 28.50,
-        "tenet": 12,
-        "flow": 15.80,
-        "blood_brothers": 29.50,
-        "karate_kid": 25,
-        "how_to_train_dragon": 35,
-        "keluang_man": 22.70,
-        "lilo_stitch": 17,
-        "final_destination": 17.60,
-        "thunderbolts": 20,
-        "kaiju_no_8": 17.50
+[
+     {  "name": "gsc_east_coast",
+        "tickets": {
+            "spirited_away": 19,
+            "ejen_ali_2": 30.50,
+            "tenet": 12,
+            "flow": 17.80,
+            "blood_brothers": 29.50,
+            "karate_kid": 26.70,
+            "how_to_train_dragon": 35,
+            "keluang_man": 24,
+            "lilo_stitch": 17,
+            "final_destination": 18.20,
+            "thunderbolts": 20,
+            "kaiju_no_8": 19.20
+        }
     },
-    "gsc_kuantan_city": {
-        "spirited_away": 19,
+    {"gsc_kuantan_city": {
+        "spirited_away": 17,
         "ejen_ali_2": 28.50,
-        "tenet": 12,
+        "tenet": 13.20,
         "flow": 15.80,
-        "blood_brothers": 29.50,
+        "blood_brothers": 28.40,
         "karate_kid": 25,
-        "how_to_train_dragon": 35,
+        "how_to_train_dragon": 33,
         "keluang_man": 22.70,
-        "lilo_stitch": 17,
+        "lilo_stitch": 16.30,
         "final_destination": 17.60,
-        "thunderbolts": 20,
+        "thunderbolts": 19.50,
         "kaiju_no_8": 17.50
+    }
     },
+    {
     "ae_cinema": {
         "spirited_away": 20,
         "ejen_ali_2": 26.70,
@@ -40,5 +44,5 @@
         "final_destination": 16,
         "thunderbolts": 22,
         "kaiju_no_8": 16
-    }
-}
+    }}
+]
