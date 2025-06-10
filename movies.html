@@ -5,7 +5,7 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>MAKMURFLIX - Movies</title>
+  <title>Movies | Makmurflix</title>
   <link rel="stylesheet" href="movies.css">
   <script src="https://kit.fontawesome.com/8bd7cb800b.js" crossorigin="anonymous"></script>
   <script src="include.js"></script>
@@ -17,7 +17,14 @@
     <div class="movies-header">
       <h2>Movies</h2>
       <div>
-        <button>Filter</button>
+        <button class ="filter-btn"><i class="fa-solid fa-bars"></i> Filter
+          <div class="filter-cont hidden">
+            <option value="">All</option>
+            <option value="Action">Action</option>
+            <option value="Adventure">Adventure</option>
+            <option value="Animation">Animation</option>
+          </div>
+        </button>
         <button>Sort</button>
       </div>
     </div>
