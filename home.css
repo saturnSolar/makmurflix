@@ -294,6 +294,8 @@ h2 {
 
 .upcoming_poster {
     background-color: #000;
+    object-fit: cover;
+    height: 100%;
 }
 
 .upcoming_overlay {
