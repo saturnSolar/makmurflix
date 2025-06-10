@@ -66,6 +66,10 @@ main {
     transition: max-height 0.2s ease-out;
 }
 
+.select {
+    display: none;
+}
+
 .movie-dropdown-menu.hidden {
     max-height: 0;
 }
@@ -152,6 +156,7 @@ main {
     max-height: 300px;
     left: 0;
     top: 45px;
+    z-index: 1;
     background-color: #ffffff;
     outline: 2px solid #b1b1b1;
     border-radius: 10px;
@@ -178,13 +183,27 @@ main {
     padding: 10px 20px;
 }
 
+.warning-message {
+    align-self: center;
+    font-size: 12px;
+    color: #b7b7b7;
+}
+
+.warning-message.hidden {
+    display: none;
+}
+
 /* The schedule thing from izz */
 
 .item-cont {
     display: flex;
     flex-direction: column;
-    gap: 1px;
+    gap: 10px;
 
+}
+
+.item-cont.hidden {
+    display: none;
 }
 
 .item-title {
@@ -240,25 +259,58 @@ main {
 }
 
 
-#timeline-cont {
+.timeline-cont {
     width  : 100%;
-    height : 5%;
-
+    height : 20px;
     display: flex;
+    flex-direction: column;
+    position: relative;
     justify-content: center;
     align-items: center;
 }
 
 #timeline {
-    width: 95%;
+    width: 100%;
     height: 1px;
 
     background-color: gray;
 }
 
+.dot-cont {
+    width: 80%;
+    left: -5px;
+    height: auto;
+    display: flex;
+    position: relative;
+}
+
+@keyframes woop {
+    from {
+        transform: scale(0);
+    }
+    to {
+        transform: scale(1);
+    }
+}
+
 .dot {
-    width: 5px;
-    height: 5px;
+    position: absolute;
+    left: 0px;
+    top: -5px;
+    width: 10px;
+    height: 10px;
+    background-color: #ffffff;
+    outline: 2px solid gray;
+    border-radius: 20px;
+    animation: woop 0.1s cubic-bezier(.29,.83,.71,1.28);
+    transition: all 0.1s ease-out;
+}
+
+.dot:hover {
+    outline: 4px solid gray;
+    transform: scale(1.2);
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.436);
+
 }
 
 #indicator {
@@ -312,4 +364,24 @@ main {
     width: 3%;
     height: 20%;
     background-color: gray;
+}
+
+.experience-cont {
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+}
+
+.exp {
+    border: 1px solid #525252;
+    border-radius: 5px;
+    padding: 10px 20px;
+    width: 50px;
+    height: 30px;
+}
+
+.exp img {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
 }

@@ -15,6 +15,7 @@
 
     <main>
         <div id="movie-select" onclick="toggleMovieDropDown()">
+            <select class="select"></select>
             <i class="fa-solid fa-chevron-right"></i>
             <label>Select a movie</label>
             
@@ -30,41 +31,22 @@
 
                 
                 <div class="cinema-selector">
+                    <select class="select"></select>
                     <i class="fa-solid fa-chevron-down"></i>
                     <p style="margin: 0">Select a cinema...</p>
                     <div class="cinema-dropdown-menu hidden">
                     </div>
                 </div>
-                <div class="item-cont">
+                <p class="warning-message">Nothing to show here.</p>
+                <div class="item-cont hidden" id="schedule">
                     <h3 class="item-title" style="float: left;">Airing Schedule</h3>
                     <article id="schedule-container">
                         
                         <section id="date-cont"> 
-                            <div class="day-cont"> 
-                                <h5 class="day">   MON </h5>
-                                <h2 class="date">   04 </h2>
-                                <h5 class="month"> JUN </h5>
-                            </div>
-                            <div class="day-cont"> 
-                                <h5 class="day">   MON </h5>
-                                <h2 class="date">   04 </h2>
-                                <h5 class="month"> JUN </h5>
-                            </div>
-                            <div class="day-cont"> 
-                                <h5 class="day">   MON </h5>
-                                <h2 class="date">   04 </h2>
-                                <h5 class="month"> JUN </h5>
-                            </div>
                         </section>
 
-                        <section id="timeline-cont"> 
-                            <div id="dot-cont">
-                                <div class="dot"></div>
-                                <div class="dot"></div>
-                                <div class="dot"></div>
-                                <div class="dot"></div>
-                                <div class="dot"></div>
-                            </div>
+                        <section class="timeline-cont"> 
+                            <div class="dot-cont"></div>
                             <div id="timeline"> </div>
                         </section>
 
@@ -120,18 +102,97 @@
                         </section>
                     </article>
                 </div>
+
+                <div class="item-cont">
+                    <h3 class="item-title" style="float: left;">Cinema Experiences</h3>
+                    <div class="experience-cont">
+                    </div>
+                </div>
             </div>
             <div id="separator-line"></div>
 
             <div class="cinema-cont" id="cinema2">
                 <h1 class="cinema-title right">Cinema #2</h1>
                 <div class="cinema-selector">
+                    <select class="select"></select>
                     <i class="fa-solid fa-chevron-down"></i>
                     <p style="margin: 0">Select a cinema...</p>
                     <div class="cinema-dropdown-menu hidden">
                     </div>
                 </div>
+                
+                <p class="warning-message">Nothing to show here.</p>
+                <div class="item-cont hidden" id="schedule">
+                    <h3 class="item-title" style="float: left;">Airing Schedule</h3>
+                    <article id="schedule-container">
+                        
+                        <section id="date-cont"> 
+                        </section>
+
+                        <section class="timeline-cont"> 
+                            <div class="dot-cont"></div>
+                            <div id="timeline"> </div>
+                        </section>
+
+                        <section id="indicator">
+                            <div class="main"> </div>
+                            
+                            <div class="sub"> </div>
+                            <div class="sub"> </div>
+                            <div class="sub"> </div>
+
+                            <div class="main"> </div>
+                            
+                            <div class="sub"> </div>
+                            <div class="sub"> </div>
+                            <div class="sub"> </div>
+
+                            <div class="main"> </div>
+                            
+                            <div class="sub"> </div>
+                            <div class="sub"> </div>
+                            <div class="sub"> </div>
+                            
+                            <div class="main"> </div>
+
+                            <div class="sub"> </div>
+                            <div class="sub"> </div>
+                            <div class="sub"> </div>
+                            
+                            <div class="main"> </div>
+                        </section>
+
+                        <section id="time-cont">
+                            <div class="time">
+                                <h2 class="time-value"> 08 </h2>
+                                <h3 class="am-pm"> AM   </h3>
+                            </div>
+                            <div class="time">
+                                <h2 class="time-value"> 12 </h2>
+                                <h3 class="am-pm"> PM   </h3>
+                            </div>
+                            <div class="time">
+                                <h2 class="time-value"> 04 </h2>
+                                <h3 class="am-pm"> PM   </h3>
+                            </div>
+                            <div class="time">
+                                <h2 class="time-value"> 08 </h2>
+                                <h3 class="am-pm"> PM   </h3>
+                            </div>
+                            <div class="time">
+                                <h2 class="time-value"> 12 </h2>
+                                <h3 class="am-pm"> AM   </h3>
+                            </div>
+                        </section>
+                    </article>
+                </div>
+                <div class="item-cont">
+                    <h3 class="item-title" style="float: left;">Cinema Experiences</h3>
+                    <div class="experience-cont">
+                    </div>
+                </div>
             </div>
+            
         </div>
         <script>includeHTML();</script>
         <script src="comparison.js"></script>
