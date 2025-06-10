@@ -111,6 +111,9 @@ function displayUpcoming(items) {
   const container = document.getElementsByClassName("upcoming_movie_list")[0];
 
   items.forEach(item => {
+    if (item.isUpcoming === false) {
+      return;
+    }
     var card = document.createElement("div");
     card.className = "upcoming_movie_item";
     card.innerHTML = `
