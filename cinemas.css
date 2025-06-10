@@ -31,8 +31,12 @@ h1 {
   color: white;
 }
 
+.cinemas {
+  padding: 0 20px;
+}
 
 .cinema-list {
+  margin: 20px 0 ;
   display: flex;
   gap: 20px;
   flex-wrap: wrap;
@@ -76,14 +80,19 @@ h1 {
 */
 
 .cinema-overlay {
+  display: flex;
+  align-items: center;
+  gap: 20px;
   background: rgba(44, 43, 43, 0.5);
   padding: 5px;
   width: 100%;
+  border-radius: 10px;
 }
 
 .cinema-logo {
   float: left;
   width: 100px;
+  object-fit: contain;
   height: auto;
   vertical-align: middle;
   margin-right: 5px;
