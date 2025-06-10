@@ -10,14 +10,13 @@
         "genres": [
             "Adventure",
             "Animation",
-            "Family",
-            "Fantasy",
-            "Mystery"
+            "Fantasy"
         ],
         "year": 2001,
         "rating": 8.3,
         "duration": 125,
-        "isFeatured": true
+        "isFeatured": false,
+        "isUpcoming": false
     },
     {
         "id": 1,
@@ -30,13 +29,13 @@
         "genres": [
             "Science Fiction",
             "Action",
-            "Adventure",
-            "Malay"
+            "Adventure"
         ],
         "year": 2025,
         "rating": 8.3,
         "duration": 925,
-        "isFeatured": true
+        "isFeatured": true,
+        "isUpcoming": true
     },
     {
         "id": 2,
@@ -54,7 +53,8 @@
         "year": 2020,
         "rating": 7.8,
         "duration": 150,
-        "isFeatured": true
+        "isFeatured": false,
+        "isUpcoming": false
     },
     {
         "id": 3,
@@ -72,6 +72,45 @@
         "year": 2023,
         "rating": 8.3,
         "duration": 110,
-        "isFeatured": true
+        "isFeatured": false,
+        "isUpcoming": false
+    },
+    {
+        "id": 4,
+        "name": "Blood Brothers",
+        "desc": "Ariff, a loyal bodyguard, is accused of betraying Dato Zul, a prominent figure who once supported him. To prove his innocence, Ariff seeks help from his estranged brother, Jaki. As Ariff attempts to clear his name, he is pursued by Ghaz, the leader of an elite bodyguard unit and Ariff’s former close friend. Once considered \"Blood Brothers,\" their conflict evolves into a struggle involving trust, loyalty, and personal redemption. Set against a backdrop of deception and hidden agendas, Ariff must navigate both physical threats and emotional turmoil to uncover the truth. ",
+        "thumb": "images/bloodbrother/bg.jpg",
+        "logo": "images/bloodbrother/logo.png",
+        "logo_style": "width: 280px;",
+        "poster": "images/bloodbrother/poster.jpg",
+        "genres": [
+            "Adventure",
+            "Animation",
+            "Heartwarming"
+        ],
+        "year": 2025,
+        "rating": 8.3,
+        "duration": 110,
+        "isFeatured": true,
+        "isUpcoming": true 
+    },
+    {
+        "id": 5,
+        "name": "Karate Kid Legends",
+        "desc": "After moving to New York City with his mother, kung fu prodigy Li Fong struggles to let go of the past as he tries to fit in with his new classmates. When a new friend needs his help, Li enters a karate competition -- but his skills alone aren't enough. With help from Mr. Han and Daniel LaRusso, he soon learns to merge two styles into one for the ultimate martial arts showdown.",
+        "thumb": "images/karatekid/bg.jpg",
+        "logo": "images/karatekid/logo.png",
+        "logo_style": "width: 300px; height: 100px; object-fit: cover; object-position: top;",
+        "poster": "images/karatekid/poster.jpg",
+        "genres": [
+            "Adventure",
+            "Animation",
+            "Heartwarming"
+        ],
+        "year": 2025,
+        "rating": 6.6,
+        "duration": 110,
+        "isFeatured": true,
+        "isUpcoming": true
     }
 ]
