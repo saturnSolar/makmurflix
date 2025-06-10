@@ -4,22 +4,13 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>MAKMURFLIX - Movies</title>
-  <link rel="stylesheet" href="styles.css" />
+  <link rel="stylesheet" href="movies.css">
+  <script src="include.js"></script>
 </head>
 <body>
-  <header class="navbar">
-    <div class="logo">MAKMURFLIX</div>
-    <nav>
-      <a href="#">Home</a>
-      <a href="#" class="active">Movies</a>
-      <a href="#">Cinemas</a>
-      <a href="#">Comparison</a>
-      <a href="#">Events</a>
-      <a href="#">About</a>
-    </nav>
-  </header>
+  <header w3-include-html="header.html"></header>
 
   <main class="container">
     <div class="movies-header">
@@ -33,6 +24,7 @@
     <div class="movie-grid" id="movieGrid"></div>
   </main>
 
-  <script src="script.js"></script>
+  <script>includeHTML();</script>
+  <script src="movies.js"></script>
 </body>
 </html>
