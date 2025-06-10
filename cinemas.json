@@ -4,8 +4,8 @@
     "name": "GSC East Coast Mall",
     "rating": "10.0",
     "status": "open",
-    "logo" : "images/cinemas/gsclogo.webp",
-    "background": "images/cinemas/GSCecm.png",
+    "logo" : "images/cinemas/gscecm/logo.webp",
+    "background": "images/cinemas/gscecm/bg.png",
     "city": "Kuantan",
     "contact" : "012-345 6789"
   },
@@ -14,8 +14,8 @@
     "name": "GSC Kuantan City Mall",
     "rating": "9.8",
     "status": "close",
-    "logo" : "images/cinemas/GSClogo.jpg",
-    "background": "images/cinemas/GSCkcm.png",
+    "logo" : "images/cinemas/gsckcm/logo.webp",
+    "background": "images/cinemas/gsckcm/bg.png",
     "city": "Kuantan",
     "contact" : "012-866 7875"
   },
@@ -24,8 +24,8 @@
     "name": "GSC Berjaya Megamall",
     "rating": "9.2",
     "status": "open",
-    "logo" : "images/cinemas/GSClogo.jpg",
-    "background": "images/cinemas/GSCberjaya.png",
+    "logo" : "images/cinemas/gscberjaya/logo.webp",
+    "background": "images/cinemas/gscberjaya/bg.png",
     "city": "Kuantan",
     "contact" : "011-7250 2536"
   },
@@ -34,8 +34,8 @@
     "name": "AE Cinemas Megamall",
     "rating": "8.6",
     "status": "open",
-    "logo" : "images/cinemas/AElogo.png",
-    "background" : "images/cinemas/AE.jpeg",
+    "logo" : "images/cinemas/ae/logo.png",
+    "background" : "images/cinemas/ae/bg.jpeg",
     "city": "Kuantan",
     "contact" : "011-5895 2043"
   },
@@ -44,8 +44,8 @@
     "name": "GSC Mentakab Star Mall",
     "rating": "8.1",
     "status": "close",
-    "logo" : "images/cinemas/GSClogo.jpg",
-    "background": "images/cinemas/GSCmentakab.jpg",
+    "logo" : "images/cinemas/gscmentakab/logo.webp",
+    "background": "images/cinemas/gscmentakab/bg.jpg",
     "city": "Mentakab",
     "contact" : "011-5887 2945"
   },
@@ -54,8 +54,8 @@
     "name": "Bona Cinemas",
     "rating": "9.6",
     "status": "open",
-    "logo" : "images/cinemas/BONAlogo.png",
-    "background": "images/cinemas/BONA.png",
+    "logo" : "images/cinemas/bona/logo.png",
+    "background": "images/cinemas/bona/bg.png",
     "city": "Genting Highlands",
     "contact" : "011-2723 2757"
   }
