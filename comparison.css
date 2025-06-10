@@ -70,12 +70,19 @@ main {
     max-height: 0;
 }
 
-.movie-dropdown-menu > * {
+.movie-dropdown-menu option {
     color: #1f1f1f;
     font-size: 16px;
-    margin: 10px;
-    margin-left: 20px;
+    padding: 10px;
+    padding-left: 20px;
+    transition: all 0.1s ease-out;
 }
+
+.movie-dropdown-menu option:hover {
+    background-color: #0000001a;
+    text-indent: 10px;
+}
+
 
 #separator-cont {
     display: flex;
@@ -172,13 +179,24 @@ main {
 }
 
 /* The schedule thing from izz */
+
+.item-cont {
+    display: flex;
+    flex-direction: column;
+    gap: 1px;
+
+}
+
+.item-title {
+    font-size: 15px;
+    font-weight: lighter;
+    margin: 0;
+}
+
 #schedule-container {
-    width: 60%;
+    width: 100%;
     height: 30vh;
     min-height: 200px;
-
-    border: 3px solid black;
-    border-radius: 20px;
 
     display: flex;
     flex-direction: column;
@@ -189,24 +207,28 @@ main {
 #date-cont {
     width: 95%;
     height: 50%;
-
     display: flex;
     justify-content: flex-start;
     align-items: center;
-    gap: 5%;
+    gap: 5px;
 }
 
 .day-cont {
-    width: 7%;
-    height: 80%;
-
-    border: 3px solid black;
+    width: 40px;
+    height: 70px;
+    border: 1px solid black;
     border-radius: 5px;
-
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    user-select: none;
+    transition: all 0.1s ease-out;
+}
+
+.day-cont:hover {
+    transform: scale(1.1);
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
 }
 
 .day-cont > * {
@@ -229,9 +251,14 @@ main {
 
 #timeline {
     width: 95%;
-    height: 50%;
+    height: 1px;
 
     background-color: gray;
+}
+
+.dot {
+    width: 5px;
+    height: 5px;
 }
 
 #indicator {
@@ -239,20 +266,20 @@ main {
     height: 10%;
 
     display: flex;
-    justify-content: space-around;
+    justify-content: space-evenly;
     align-items: flex-start;
 }
 
 #indicator > .main {
     height: 100%;
-    width: 0.5%;
+    width: 1px;
 
     background-color: darkgray;
 }
 
 #indicator > .sub {
     height: 100%;
-    width: 0.5%;
+    width: 1px;
 
     background-color: lightgray;
 }
