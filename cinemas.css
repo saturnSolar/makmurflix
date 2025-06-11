@@ -14,7 +14,7 @@ main {
     margin: 20px 100px;
     border-radius: 20px;
     overflow: hidden;
-    background-color: #555555;
+    background-color: #ffffff;
 }
 
 /* footer styles */
@@ -28,6 +28,7 @@ main {
 .footer h1{
     font-size: 40px;
     margin: 0px;
+    color: #7f7f7f;
     font-family: Nintendo Font, sans-serif;
 }
 
@@ -63,12 +64,67 @@ main {
     }
 }
 
-h1 {
-  color: white;
+main h1 {
+  font-size: 30px;
+  color: #1f1f1f;
 }
 
 .cinemas {
   padding: 0 20px;
+}
+
+.cinemas button {
+  z-index: 1;
+  position: relative;
+  padding: 0.5em 1em;
+  border: none;
+  border-radius: 6px;
+  background-color: #e0e0e0;
+  cursor: pointer;
+  margin-left: 0.5em;
+}
+
+.filter-cont{
+  position: absolute;
+  left: 0;
+  background-color: #e0e0e0;
+  border-radius: 6px;
+  top: 35px;
+  overflow:hidden;
+}
+
+.sort-cont{
+  padding: 0;
+  position: absolute;
+  right: 0;
+  background-color: #e0e0e0;
+  border-radius: 6px;
+  top: 35px;
+  overflow:hidden;
+}
+
+.filter-cont.hidden {
+  display: none;
+}
+
+.sort-cont.hidden {
+  display: none;
+}
+
+.filter-cont * {
+  padding: 10px 20px;
+}
+
+.sort-cont * {
+  padding: 10px 20px;
+}
+
+.filter-cont *:hover {
+  background-color: #d0d0d0;
+}
+
+.sort-cont *:hover {
+  background-color: #d0d0d0;
 }
 
 .cinema-list {
