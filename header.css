@@ -13,7 +13,7 @@ header {
     transition: box-shadow 0.2s ease-out;
     position: sticky;
     top: 0;
-    overflow: hidden;
+    overflow: visible;
     z-index: 2;
 }
 
@@ -162,6 +162,39 @@ header {
     font-size: 15px;
 }
 
+.results {
+    display: none;
+    flex-direction: column;
+    position: absolute;
+    right: 20px;
+    top: 145px;
+    background-color: #d1d1d1;
+    border-radius: 10px;
+    box-shadow: #00000074 0px 0px 15px 0px;
+    overflow: hidden;
+}
+
+.results * {
+    width: 200px;
+    color: #1f1f1f;
+    font-size: 12px;
+    margin: 0px;
+    padding: 10px 20px;
+    transition: all 0.1s ease-out;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    text-wrap: nowrap;
+    text-decoration: none;
+
+}
+
+.results *:hover {
+    background-color: #adadad;
+    cursor: pointer;
+    text-indent: 10px;
+}
+
+
 /* RESPONSIVE */
 @media (max-width: 1100px) {
 
@@ -227,5 +260,4 @@ header {
         float: right;
         pointer-events: all;
     }
-
 }
